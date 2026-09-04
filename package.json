@@ -1,0 +1,22 @@
+{
+  "name": "lovebot-whatsapp",
+  "version": "1.0.0",
+  "description": "Bot de atendimento no WhatsApp para as lojas RAIO, ICNG e HKW.",
+  "main": "lovebot.js",
+  "scripts": {
+    "start": "node lovebot.js",
+    "check": "node --check lovebot.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "openai": "^7.10.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.7"
+  },
+  "allowScripts": {
+    "puppeteer@24.38.0": true
+  }
+}

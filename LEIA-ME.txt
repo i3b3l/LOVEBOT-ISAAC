@@ -1,0 +1,36 @@
+SUPER LOVEBOT — CONTEXTO DAS MENSAGENS DA IZABEL
+
+O que esta versão adiciona:
+- Isaac continua sendo o único contato que ativa respostas automáticas.
+- Mensagens MANUAIS enviadas pela Izabel para Isaac são registradas como contexto.
+- O LoveBot NÃO responde às mensagens da Izabel.
+- Respostas automáticas do próprio LoveBot são detectadas e NÃO entram como mensagens manuais da Izabel.
+- Grupos, Status, newsletters, broadcasts e outros contatos continuam ignorados.
+- A personalidade curta, direta e em primeira pessoa foi mantida.
+- Não há nova dependência npm.
+
+Como aplicar:
+1. Feche o LoveBot.
+2. Faça backup da pasta atual.
+3. Substitua lovebot.js pelo arquivo deste ZIP.
+4. Substitua src/ia.js pelo arquivo deste ZIP.
+5. NÃO altere seu .env, API key, número ou LID.
+6. Rode:
+   node --check lovebot.js
+   node --check src/ia.js
+   npm start
+
+Teste recomendado:
+1. Izabel envia MANUALMENTE para Isaac:
+   "não gostei do jeito que você falou comigo"
+2. O terminal deve mostrar:
+   "🧠 Mensagem manual da Izabel adicionada ao contexto."
+3. O bot NÃO deve responder a essa mensagem.
+4. Isaac responde:
+   "você ficou chateada?"
+5. Se essa frase não cair numa regra fixa, a IA receberá a mensagem manual da Izabel como contexto real.
+
+Observação:
+- As mensagens manuais ficam somente em memória RAM.
+- Elas expiram após 20 minutos ou ao usar o comando de reset da conversa.
+- Nada é salvo em arquivo.
