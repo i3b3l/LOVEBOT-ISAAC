@@ -1,4 +1,4 @@
-﻿# Robô WhatsApp — para o meu amor ❤️
+﻿# Robô WhatsApp — para o meu amor Kk ❤️
 
 Bot pessoal de WhatsApp que responde às mensagens privadas de um contato autorizado, combinando respostas rápidas predefinidas com uma IA configurável. O projeto também usa mensagens manuais recentes enviadas pela própria conta como contexto temporário para a IA, sem responder a essas mensagens.
 
