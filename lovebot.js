@@ -1,3 +1,8 @@
+// ============================================================
+// FEITO COM <3 POR IZABEL GALVAO :3
+// ATUALIZACOES NO MEU GITHUB: https://github.com/i3b3l
+// ============================================================
+
 require('dotenv').config();
 
 const { Client, LocalAuth } = require('whatsapp-web.js');
